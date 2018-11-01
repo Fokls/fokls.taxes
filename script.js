@@ -3,31 +3,42 @@
 
  let  UICONTROLLER = (function (){
   
-    // const DOMstrings = {
-    //   NameLabel: '.name',
-    //   ButtonLabel: '.button',
-    //   SalaryLabel:'.salary'
-    // };
-    
-    let name, salary, data;
-
+    let DOMstrings = {
+       NameLabel: '.name',
+       ButtonLabel: '.button',
+       SalaryLabel:'.salary'
+     };
+     
+         
    
-    function getInput(){
-        name = document.querySelector('.name').value;
-        salary= document.querySelector('.salary').value;
+       
+
+     
+    // function testing (data){ console.log(data) }
+return {
+
+    //WHY DO WE NEED A RETURN IN GETINPUT FUNCTION
+   getInput:function ()
+   {
+       return {
+        name :document.querySelector(DOMstrings.NameLabel).value,
+        salary: document.querySelector(DOMstrings.SalaryLabel).value
         // country: 'Russia',
         // puttingOFFMone: 0};
+       }
+    },
 
-    console.log(name, salary);
-    };
-
-    // function testing (data){ console.log(data) }
-return  
-    let getData = document.querySelector('#summary').addEventListener('click', getInput);
+   getDOMstrings: function() {
+    return DOMstrings;
+}
+}
   
+ 
+ 
+
   })();
 
-UICONTROLLER.getData();
+ 
  
   
 //   let cacl = (function  () {
@@ -59,4 +70,31 @@ UICONTROLLER.getData();
    
   
   
+   // GLOBAL APP CONTROLLER
+
+const globalAppControl = (function (uicontr){
+
+    // Make an event listener + starting the app function
+    const setEventListener = () =>{
+       const DOM = uicontr.getDOMstrings();
+       document.querySelector(DOM.ButtonLabel).addEventListener('click', startTheWork);
+    };
+
+    //write starting the app function 
+    const startTheWork = () => {
+        let input;
+    // getting the input
+        input = UICONTROLLER.getInput();
+        console.log(input)
+    };
    
+
+
+return {
+    init: function() {
+        setEventListener();
+    }
+};
+})(UICONTROLLER);
+
+   globalAppControl.init()
