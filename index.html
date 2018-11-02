@@ -6,21 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>How much taxes do you pay?</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 </head>
 <body>
   
   <div id='main'>
     <div class='container'>
       <form action="" class='myForm'>
-        <input class='name' type="text" placeholder = 'Your name'>
-        <input class='salary' type="number" placeholder = 'Your salary'>
+        <input class='input name' type="text" placeholder = 'Your name'>
+        <input class='input salary' type="number" placeholder = 'Your salary'>
         <button class='button' type="button">Send</button>
          
               </form>
       <div id='summary'>
-        <h1>Summury</h1>
-        <p>Your annual salary is: <span id='annual_salary'></span></p>
-        <p>You pay taxes per year: <span id='annual_taxes'></span></p>
+         
+        <p>Годовой доход: <span class='annual_salary'></span></p>
+        <p>Реальный доход: <span class='net_icome'></span></p>
+        <p>Общая сумма выплат (налоги+фонды) : <span class='annual_taxes'></span></p>
+         
       </div>
       
     </div>
