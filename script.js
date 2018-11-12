@@ -7,9 +7,13 @@
        NameLabel: '.name',
        ButtonLabel: '.button',
        SalaryLabel:'.salary',
+       Notaxes: '.putOffMoney',
        Salaryprint: '.annual_salary',
        Netinc:'.net_icome',
-       Alltaxes:'.annual_taxes'
+       Alltaxes:'.annual_taxes',
+       Montlypayment:'.monthlybase',
+       ndsLabel: '.nds_taxes'
+
      };
      
          
@@ -27,9 +31,11 @@ return {
    {
        return {
         // name :document.querySelector(DOMstrings.NameLabel).value,
-        salary: document.querySelector(DOMstrings.SalaryLabel).value
+        salary: document.querySelector(DOMstrings.SalaryLabel).value,
         // country: 'Russia',
-        // puttingOFFMone: 0};
+        puttingOFFMone: document.querySelector(DOMstrings.Notaxes).value,
+    
+        time: document.querySelector(DOMstrings.Montlypayment).checked
        }
     },
     
@@ -38,8 +44,20 @@ return {
         document.querySelector(DOMstrings.Salaryprint).textContent = el.annualinc;
         document.querySelector(DOMstrings.Netinc).textContent = el.netincome;
         document.querySelector(DOMstrings.Alltaxes).textContent = el.alltaxes;
+        document.querySelector(DOMstrings.ndsLabel).textContent = el.NDS ;
 
       },
+
+    clearfields: function (){
+        
+
+       let fields=Array.from(document.querySelectorAll(DOMstrings.SalaryLabel + ',' + DOMstrings.Notaxes))
+        
+       let fieldzer = fields.forEach(el => el.value  = '');
+
+        fields[0].focus();
+        
+    },
 
    getDOMstrings: function() {
     return DOMstrings;
@@ -61,29 +79,31 @@ return {
      
 
     countANSalary: function (person) {
-        let annualinc, ndfl, pen, med, SocialIns, alltaxes, netincome ; 
+        let annualinc, ndfl, pen, med, SocialIns, alltaxes, netincome, TaxedMoney, NDS ; 
        // paiedBying, alltogetherANDBought, percentalltogether;
+        if(person.time){
+            annualinc = person.salary*12;
+        } else {annualinc = person.salary}
 
-         annualinc = person.salary*12;
+        if(person.puttingOFFMone>0){
+            TaxedMoney  = annualinc - person.puttingOFFMone;
+        } else{  TaxedMoney = annualinc
+                    }
+         
          ndfl = annualinc*0.13;
          netincome = annualinc - ndfl;
          pen = annualinc*0.22;
          med = annualinc*0.051;
          SocialIns = annualinc*0.029;
          alltaxes = ndfl+ pen + med + SocialIns;
-
-         console.log(`Hello my dear friend ${person.name}, your annual income is ${annualinc}, you get on your hands ${netincome} and you pay ${alltaxes} every year`)
+         NDS = TaxedMoney*0.18;
 
           return {
-            annualinc,netincome, alltaxes
+            annualinc,netincome, alltaxes,NDS 
           }
          
     }}
-  
-    // if(person.salaryType === 'monthly' ) {
-    //   annualinc = person.salary*12
-    //   } else {annualinc = person.salary}};
-    
+
    
     
 //      if(person.puttingOFFMone === 0 ) {
@@ -129,6 +149,8 @@ const globalAppControl = (function (uicontr, calculate){
      console.log(annualsalary);
      // print
      UICONTROLLER.addInfo(annualsalary);
+     //clear fields
+     UICONTROLLER.clearfields();
     };
     
    

@@ -1,48 +1,66 @@
- 
+/*  
+@import url('https://fonts.googleapis.com/css?family=Prosto+One');*/
 
-body {
-  margin: 0;
+@font-face {
+  font-family: 'Jaapokkisubtract';
+  src: url('../fonts/JaapokkisubtractRegular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/JaapokkisubtractRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/JaapokkisubtractRegular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/JaapokkisubtractRegular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/JaapokkisubtractRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/JaapokkisubtractRegular#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body{
+  height: 100vh;
   padding: 0;
-  background-color:rgb(158, 229, 255)
+  margin: 0;
   
 }
 
-#main {
-  position:absolute;
-  padding:4rem;
-  left: 30%;
-  top:15%;
-  background-color:#0AA0D9;
-  box-shadow: 5px 10px #888888;
-}
 
-.input{
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 10px;
-  background-color: #fff;
-  border: 10px solid #F7F7F7;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
-}
-
-#summary{
-  position:relative;
-  margin-top: 2rem;
-  color: white;
-  font-family: 'Marmelad', sans-serif;
-}
-h1 {
- text-align: center;
- font-size: 1.6rem
+.yellow{
+  background-image: url(img/untitled.svg);
+  background: url(img/untitled.svg) right no-repeat;
+   
+  position: relative;
+  
+  padding: 22vh;
+   
 }
  
-button {
-  background-color:#FFF;
-  color: #0AA0D9; 
-  font-family: 'Marmelad', sans-serif;
-  font-size: 1.2rem;
-  font-weight:600;
-  border-radius: 14px;
+.svg {
+ /* position: absolute;
+ top: -50vh;
+ right: 0;
+   */
+
+    
+}
+
+.logo{
+  font-family: 'Jaapokkisubtract', sans-serif;
+  text-transform: uppercase;
+  width: 3em;
+  height: 2em;
+  background-color: #fff909;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 1.3vh;
+  color: #383636;
+  border-radius: 13px;
+  margin-top: 2vh;
+  margin-left: 2vh;
+position: absolute;
+top: 0;
+
+}
+
+.text{
+  position: absolute;
+  margin-left: 10vh;
+}
   
+.title{
+  font-family: 'Paytone One', sans-serif;
 }
