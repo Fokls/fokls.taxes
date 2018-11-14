@@ -5,7 +5,7 @@
   
     let DOMstrings = {
        NameLabel: '.name',
-       ButtonLabel: '.button',
+       ButtonLabel: '.btnSum',
        SalaryLabel:'.salary',
        Notaxes: '.putOffMoney',
        Salaryprint: '.annual_salary',
@@ -35,7 +35,7 @@ return {
         // country: 'Russia',
         puttingOFFMone: document.querySelector(DOMstrings.Notaxes).value,
     
-        time: document.querySelector(DOMstrings.Montlypayment).checked
+         time: 'monthly'
        }
     },
     

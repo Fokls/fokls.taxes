@@ -12,55 +12,137 @@
 }
 
 body{
-  height: 100vh;
+  
   padding: 0;
   margin: 0;
   
 }
-
+.header{
+  height: 100vh;
+}
 
 .yellow{
   background-image: url(img/untitled.svg);
   background: url(img/untitled.svg) right no-repeat;
-   
+ 
   position: relative;
   
   padding: 22vh;
    
 }
  
-.svg {
- /* position: absolute;
- top: -50vh;
- right: 0;
-   */
-
-    
-}
-
 .logo{
   font-family: 'Jaapokkisubtract', sans-serif;
   text-transform: uppercase;
-  width: 3em;
-  height: 2em;
-  background-color: #fff909;
+  width: 3.5em;
+  height: 1.5em;
+  
   text-align: center;
   font-size: 26px;
-  padding-top: 1.3vh;
+  padding-top: 1vh;
   color: #383636;
   border-radius: 13px;
   margin-top: 2vh;
   margin-left: 2vh;
 position: absolute;
 top: 0;
+transition: all 0.5s ease
+}
 
+.logo__whitepage {
+  background-color:#ffffff;
+  border: 4px solid #fff909;
+}
+
+.logo:hover{
+  border-radius: 0;
+   
 }
 
 .text{
   position: absolute;
-  margin-left: 10vh;
+  margin-left: 20vh;
+  margin-top: -10vh;
 }
   
 .title{
   font-family: 'Paytone One', sans-serif;
+  font-size: 45px;
+}
+
+.text_offer{
+  margin-top: 5vh;
+}
+
+.button_one {
+  margin-top: 5vh;
+  width: 25vh;
+  height: 6vh;
+  padding-top: 3vh;
+  text-align: center;
+  background-color: #fff909
+}
+
+.button:hover{
+  background-color: #fff;
+  border: 5px solid #fff909;
+}
+.calc{
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.page2{
+  background-color: #fff909;
+  width: 100%;
+  height: 12vh;
+  
+  
+}
+
+.container{
+  position: relative;
+  top:20%;
+  left: 15%;
+ 
+}
+
+.pertTWO{
+  display: flex;
+}
+
+
+.logo__yellowpage{
+  background-color:#fff909;
+  border: 5px solid  #383636;
+   top: 1vh;
+}
+
+.form{
+  width:30%;
+  height: 10vh;
+  background-color:#ffffff;
+  border: 4px solid #fff909; 
+  
+  
+}
+.form .partOne{
+  display: flex;
+}
+
+.form_label_one{
+  padding: 3vh;
+}
+
+.button_two{
+  background-color:#fff909;
+  width:30px;
+  height: 30px;
+  cursor: pointer;
+  
+}
+
+.taxes_summary{
+width: 50%;
+margin-left: 10%;
 }
