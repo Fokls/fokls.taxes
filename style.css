@@ -35,8 +35,7 @@ body{
   font-family: 'Jaapokkisubtract', sans-serif;
   text-transform: uppercase;
   width: 3.5em;
-  height: 1.5em;
-  
+  height: 2em;
   text-align: center;
   font-size: 26px;
   padding-top: 1vh;
@@ -67,25 +66,46 @@ transition: all 0.5s ease
   
 .title{
   font-family: 'Paytone One', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
+}
+.taxes {
+  font-size: 65px;
+  margin-top: -40px;
+  
 }
 
 .text_offer{
   margin-top: 5vh;
+  margin-left: 30px;
+  width:80vh;
+  font-size: 20px;
+}
+
+.text_offer span {
+  font-weight: 900;
+  
 }
 
 .button_one {
   margin-top: 5vh;
+  margin-left: 30px;
   width: 25vh;
   height: 6vh;
-  padding-top: 3vh;
+  padding-top: 0.7vh;
   text-align: center;
-  background-color: #fff909
+  background-color: #fff909;
+  font-weight: 900;
+  font-size: 18px;
+  transition: all 0.5s ease;
 }
 
-.button:hover{
+
+
+.button_one:hover{
   background-color: #fff;
   border: 5px solid #fff909;
+  height: 8vh;
+ 
 }
 .calc{
   height: 100vh;
@@ -95,7 +115,7 @@ transition: all 0.5s ease
 .page2{
   background-color: #fff909;
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   
   
 }
@@ -103,7 +123,7 @@ transition: all 0.5s ease
 .container{
   position: relative;
   top:20%;
-  left: 15%;
+  left: 0%;
  
 }
 
@@ -115,7 +135,8 @@ transition: all 0.5s ease
 .logo__yellowpage{
   background-color:#fff909;
   border: 5px solid  #383636;
-   top: 1vh;
+   top: -1vh;
+  
 }
 
 .form{
@@ -127,11 +148,11 @@ transition: all 0.5s ease
   
 }
 .form .partOne{
-  display: flex;
 }
 
 .form_label_one{
   padding: 3vh;
+   
 }
 
 .button_two{
