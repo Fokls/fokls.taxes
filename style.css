@@ -11,102 +11,130 @@
   url('../fonts/JaapokkisubtractRegular#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-body{
-  
+*{
   padding: 0;
   margin: 0;
-  
+  box-sizing: border-box;
 }
 .header{
   height: 100vh;
+  position: relative;
+ 
+
 }
 
-.yellow{
-  background-image: url(img/untitled.svg);
-  background: url(img/untitled.svg) right no-repeat;
  
+
+.yellow{
   position: relative;
-  
-  padding: 22vh;
-   
+  height: 100vh;
+  background-image: linear-gradient(rgb(255, 249, 9), rgb(255, 249, 9));
+  clip-path: inset(0% -10% 88% 40% round 30px);
 }
  
+
+.nav{
+  position: absolute;
+ top: 0;
+ right:0;
+ padding-right: 5%;
+ display: flex;   
+ flex-direction:row-reverse;
+
+  font-family: 'Paytone One', sans-serif;
+  font-size: 18px;
+  
+}
+
+.nav p{
+  display: inline;
+  padding: 3vh 4vw;
+   
+}
+
+
 .logo{
   font-family: 'Jaapokkisubtract', sans-serif;
   text-transform: uppercase;
   width: 3.5em;
-  height: 2em;
+  height: 1.7em;
   text-align: center;
   font-size: 26px;
   padding-top: 1vh;
   color: #383636;
-  border-radius: 13px;
+  
   margin-top: 2vh;
   margin-left: 2vh;
-position: absolute;
-top: 0;
-transition: all 0.5s ease
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease
 }
 
 .logo__whitepage {
-  background-color:#ffffff;
-  border: 4px solid #fff909;
+  background-color:#fff909;
+  border-radius: 15px;
+  
 }
 
 .logo:hover{
-  border-radius: 0;
-   
+    
 }
+
+
 
 .text{
   position: absolute;
-  margin-left: 20vh;
-  margin-top: -10vh;
+  top:55%;
+  left:8%;
+  transform: translate(0, -50%);
+  text-align: center
 }
   
 .title{
   font-family: 'Paytone One', sans-serif;
-  font-size: 40px;
+  font-size: 38px; 
 }
 .taxes {
-  font-size: 65px;
-  margin-top: -40px;
-  
+  font-size: 60px;
+  margin-top: -15px;
 }
 
 .text_offer{
-  margin-top: 5vh;
-  margin-left: 30px;
-  width:80vh;
+  margin-top: 2.5vh;
+  margin-left: px;
+  width:70vh;
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .text_offer span {
   font-weight: 900;
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 15px 40px;
+  display: inline-block;
+  text-transform: uppercase;
   
 }
 
-.button_one {
-  margin-top: 5vh;
-  margin-left: 30px;
-  width: 25vh;
-  height: 6vh;
-  padding-top: 0.7vh;
-  text-align: center;
+.btn-yellow{
   background-color: #fff909;
-  font-weight: 900;
-  font-size: 18px;
-  transition: all 0.5s ease;
+  color: #383636;
 }
-
-
-
-.button_one:hover{
-  background-color: #fff;
-  border: 5px solid #fff909;
-  height: 8vh;
  
+.btn:hover{
+    transform: translateY(-3px);
+    color: #383636;
 }
+
+.btn:active{
+  transform: translateY(-1px)
+}
+ 
 .calc{
   height: 100vh;
   position: relative;
@@ -116,21 +144,17 @@ transition: all 0.5s ease
   background-color: #fff909;
   width: 100%;
   height: 10vh;
-  
-  
 }
 
 .container{
   position: relative;
   top:20%;
   left: 0%;
- 
 }
 
 .pertTWO{
   display: flex;
 }
-
 
 .logo__yellowpage{
   background-color:#fff909;
@@ -160,7 +184,6 @@ transition: all 0.5s ease
   width:30px;
   height: 30px;
   cursor: pointer;
-  
 }
 
 .taxes_summary{
