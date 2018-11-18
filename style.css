@@ -28,11 +28,11 @@
 .yellow{
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(rgb(255, 249, 9), rgb(255, 249, 9));
+  background-image: linear-gradient(to right, rgb(255, 249, 9), rgb(255, 217, 49));
   clip-path: inset(0% -10% 88% 40% round 30px);
+  
 }
  
-
 .nav{
   position: absolute;
  top: 0;
@@ -40,7 +40,6 @@
  padding-right: 5%;
  display: flex;   
  flex-direction:row-reverse;
-
   font-family: 'Paytone One', sans-serif;
   font-size: 18px;
   
@@ -48,11 +47,19 @@
 
 .nav p{
   display: inline;
-  padding: 3vh 4vw;
+  margin: 1.5vh 3vw;
+  padding: 2vh 4vh;
    
 }
 
+.nav p:hover{
+  transform: translateY(-3px);
+  cursor: pointer;
+  background-color: #fffd91;
+  border-radius: 20px;
+}
 
+ 
 .logo{
   font-family: 'Jaapokkisubtract', sans-serif;
   text-transform: uppercase;
@@ -77,7 +84,10 @@
 }
 
 .logo:hover{
-    
+   
+  cursor: pointer;
+  background-color: #fffd91;
+  border-radius: 20px;
 }
 
 
@@ -189,4 +199,17 @@
 .taxes_summary{
 width: 50%;
 margin-left: 10%;
+}
+
+@keyframes moveOut{
+
+  0%{
+      opacity: 0.5;
+       
+  }
+
+  100%{
+    opacity: 1;
+  }
+
 }
