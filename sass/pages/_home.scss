@@ -1,5 +1,9 @@
 .section-header{
     height:15vh;
-    border-bottom: 3px solid $color-primary-dark;
+    min-height: 10rem;
+     
+    border-bottom: 2px solid $color-primary-light;
+    position: relative;
+
      
 }
