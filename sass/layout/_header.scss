@@ -1,0 +1,23 @@
+.navigation{
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__logo{
+        display: flex;
+        
+    }
+    &__nav{
+        
+        li{
+            list-style: none;
+            display: inline;
+            padding-right: 2rem;
+        }
+        
+    }
+
+
+
+}

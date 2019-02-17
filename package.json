@@ -1,0 +1,15 @@
+{
+  "name": "taxes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": "https://github.com/Fokls/taxes.git",
+  "author": "Daria <foklacu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

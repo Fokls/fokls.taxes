@@ -1,115 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>How much taxes do you pay?</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Spectral:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
-  <section class="header">
-  
-      <div class="head">
 
-       <div class="yellow">
-       
-       </div>
-
-       <div class="nav">
-           
-          <p>Menu one</p>
-          <p>Menu two</p>
-          <p>Menu Three</p>
-         
-      </div>
-
-        <div class="logo logo__whitepage">
-          lÖg 
-          </div>
-  
-
-      </div>
-
-
-        <div class="text">
-        <div class="title">
-            KNOW YOUR <br>
-            <div class='taxes'>
-                TAXES
-            </div> 
-        </div>
-        <div class="text_offer">
-            <span>СКОЛЬКО</span>  вы платите налогов? <span>КУДА</span> идут Ваши деньги?  Какие налоги в <span>ДРУГИХ</span> странах?  
-        </div>
-
-          <a href="#" class="btn btn-yellow">Узнать Больше</a>
-       
-        </div>
+  <section class="section-header">
+    <div class="container">
       
-  </section>
-
-  <section class='calc'>
-    <div class="page2"></div>
-
-        <div class="logo logo__yellowpage">
-          LÖg
+      <div class="navigation">  
+        <div class="navigation__logo">
+          <img src="img/Polygon.svg" alt="logo">
+          <p>Taxes
+            Explaned</p>
         </div>
-
-        <div class="container">
-          <div class="title">Налоги</div>
-          <div class="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, perspiciatis labore. Quae hic quis cumque provident suscipit sit. Ducimus, illo.</div>
-        
-
-      <div class='partTWO'>
-        
-          <div class="form">
-            <form action="">
-              <div class="partOne">
-              <span class="form_label_one">Ваш месячный доход</span> 
-              <input class='input salary' type="number" placeholder = 'Your salary'>
-              <input class='input putOffMoney' type="number" placeholder = 'Сумма, необлагаемая налогами (накопления, подарки родственникам и тд)'>
-
-              <div class="button_two btnSum"></div>
-            </div>
-            </form>
-          </div>
-
-
-          <div class='taxes_summary'>
-          <div id='summary'>
-          
-              <p>Годовой доход: <span class='annual_salary'></span></p>
-              <p>Реальный доход: <span class='net_icome'></span></p>
-              <p>Общая сумма выплат (налоги+фонды) <br>
-                не учитываются траты, необлагаемы налогами : <span class='annual_taxes'></span></p>
-              <p>Из оставшихся у вас средств, при покупках вы также заплатите: <span class='nds_taxes'></span></p>
-            </div>
-          </div>
-
+        <nav class='navigation__nav'>
+          <ul>
+            <li>Калькулятор</li>
+            <li>Библиотека</li>
+            <li>Новости</li>
+          </ul>
+        </nav>
+        <div class="navigation__nav-btn"><img src="img/nav.png" alt="navigation button"></div>
       </div>
+    </section>
 
-        
+    <section class="section-first">
+      <div class="invitation">
+        <div class="invitation__text">
+          <h1 class="invitation__big">KNOW YOUR TAXES</h1>
+          <p class="invitation__small">СКОЛЬКО вы платите налогов? КУДА идут Ваши деньги? 
+            Какие налоги в ДРУГИХ странах?
+            </p>
         </div>
+        <div class="invitation__buttons">
+          <a href="#" class="btn btn--light-blue">Калькулятор</a>
+          <a href="#" class="btn btn--dark-blue">Библиотека</a>
+        </div>
+      </div>
+      <div class="picture"><img src="img/picture.png" alt="picture"></div>
 
-      
-
-
-
-  </section>
-
-        
-              
-      
-     
+    </section>
+    
+    </div>
   
-<script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+
+<script src="script/script.js"></script>
+ 
 
 </body>
 </html>
