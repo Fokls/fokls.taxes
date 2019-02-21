@@ -1,84 +1,15 @@
-.navigation{
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 15rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    &__logo-box {
-     //как изменить размер лого
-        transition: all .3s;
-        position: relative;
-
-       &:hover{
-        transform: translateY(-.5rem);
-       }  
-    }
-
-    &__logo{
-        margin-top: 1.5rem;
-        height: 3.5rem;
-    }
-
-    &__nav{
-        align-self: center;
-        padding-right: 5rem;
-
-        li{
-            font-size: 1.8rem;
-            list-style: none;
-            display: inline-block;
-            margin-right: 2rem;
-            margin-top: 1rem;
-            padding-bottom: 1rem;
-            cursor: pointer;
-            -webkit-backface-visibility: hidden;
-            border-bottom: solid 2px transparent;
-            transition: border-bottom .2s;
-
-        
-      
-
-            &:hover {
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                background-image: linear-gradient(to right,  $color-primary-light, $color-primary-dark);  
-                border-bottom:   solid 2px $color-secondary-light;
-            }
-        }
-    }
-
-
-    &__menu{
-        position: relative;
-    }
-
-    &__btn{
-        transition: all .3s;
+.invitation{
     
-        &:hover{
-            transform: rotate(45deg) scale(.8);
-        }
-      
-    }
-    &__menu-text{ 
-        position: absolute;
-        top: 30%;
-        opacity: 0;
-        color: inherit;
-        transition: all .6s;
-        
-    }
+    padding-right: 15rem;
+    animation-name: moveright;
+    animation-duration: 2s;
+    
+}
 
-    &__btn:hover + &__menu-text{
-        transform: translateX(-4rem);
-        opacity: 1;
-    }
-
-
-
+.picture{
+    position: absolute;
+    right: 0;
+    top:-8rem;
+    width: 60%;
+    padding-bottom: 10rem;
 }

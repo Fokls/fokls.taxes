@@ -14,14 +14,93 @@ body {
 body {
   font-family: 'Spectral', serif;
   font-size: 1.6rem;
-  color: #10131f;
+  color: #001E87;
   font-size: 1.6rem; }
+
+.invitation__big {
+  text-transform: uppercase;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 3.6rem; }
+
+.invitation__small {
+  line-height: 3rem;
+  color: #001E87; }
+  .invitation__small span {
+    color: #6785EF; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3.5rem; }
+
+.u-margin-right-small {
+  margin-right: 1.5rem; }
+
+.u-margin-right-medium {
+  margin-right: 3.5rem; }
+
+@keyframes moveright {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.btn, .btn:visited, .btn:link {
+  text-decoration: none;
+  border-radius: 11px;
+  color: #fff;
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: 0.4s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+  text-align: center; }
+  .btn:hover, .btn:focus, .btn:visited:hover, .btn:visited:focus, .btn:link:hover, .btn:link:focus {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    transform: translateY(-1rem); }
+
+.btn--light-blue {
+  background-color: #6785EF; }
+
+.btn--big {
+  width: 18rem;
+  padding: 1rem 3rem; }
+
+.btn--small {
+  padding: 1rem 2rem; }
+
+.btn--pink {
+  background-color: #FF1DB3; }
+
+.btn--dark-blue {
+  background-color: #001E87; }
 
 .section-header {
   height: 15vh;
   min-height: 10rem;
   border-bottom: 2px solid #6785EF;
   position: relative; }
+
+.section-first {
+  margin-top: 18rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative; }
+
+.invitation {
+  padding-right: 15rem;
+  animation-name: moveright;
+  animation-duration: 2s; }
+
+.picture {
+  position: absolute;
+  right: 0;
+  top: -8rem;
+  width: 60%;
+  padding-bottom: 10rem; }
 
 .navigation {
   display: flex;
@@ -62,18 +141,23 @@ body {
   .navigation__menu {
     position: relative; }
   .navigation__btn {
-    transition: all .3s; }
+    height: 5rem;
+    transition: all .3s;
+    z-index: 5; }
     .navigation__btn:hover {
       transform: rotate(45deg) scale(0.8); }
   .navigation__menu-text {
     position: absolute;
-    top: 30%;
+    top: -10%;
+    transform: translateX(-4rem);
     opacity: 0;
     color: inherit;
+    z-index: 1;
     transition: all .6s; }
   .navigation__btn:hover + .navigation__menu-text {
     transform: translateX(-4rem);
-    opacity: 1; }
+    opacity: 1;
+    top: 30%; }
 
 .container {
   padding: 2vh 12vw; }

@@ -1,0 +1,47 @@
+.btn{
+    &,
+    &:visited,
+    &:link{
+        text-decoration: none;
+        border-radius: 11px;
+        color: $color-white;
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        transition: 0.4s;
+        box-shadow: $shadow-1;
+        text-align: center;
+
+
+        &:hover,
+        &:focus {
+            box-shadow: $shadow-2;
+            transform: translateY(-1rem)
+            }
+    }
+
+    &--light-blue{
+        background-color: $color-primary-light;
+    }
+
+    &--big{
+        width: 18rem;
+        padding: 1rem 3rem;
+    }
+
+    &--small{
+        padding: 1rem 2rem;
+    }
+
+
+    &--pink{
+        background-color: $color-secondary-dark;
+       
+    }
+
+    &--dark-blue{
+        background-color: $color-primary-dark;
+    }
+
+    
+}

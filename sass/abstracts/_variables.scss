@@ -6,7 +6,14 @@ $color-secondary-light:#F4A0D7;
 $color-secondary-dark: #FF1DB3;
 
 $color-black:#000;
-$color-whitr:#fff;
+$color-white:#fff;
 
-//
+$color-grey-first:#1d2044;
+
+//fonts
 $font_size_normal:1.6rem;
+
+//shadows
+
+$shadow-1: 0 1rem 3rem rgba($color-black, .25);
+$shadow-2: 0 0.5rem 1rem rgba($color-black, .25);

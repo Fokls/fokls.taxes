@@ -1,8 +1,23 @@
 body {
     font-family: 'Spectral', serif;
     font-size: $font-size-normal;
-    color: rgb(16, 19, 31);
+    color: $color-primary-dark;
     font-size: 1.6rem;
     //font-family: 'Crimson Text', serif;
 } 
 
+.invitation__big{
+    text-transform: uppercase;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 3.6rem;
+}
+
+.invitation__small{
+line-height: 3rem;
+color: $color-primary-dark;
+        & span{
+            color:$color-primary-light;
+
+        }
+
+}
